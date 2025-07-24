@@ -10,7 +10,7 @@ RUN curl -Lo 'Vault-Hunters-server-files.zip' 'https://mediafilez.forgecdn.net/f
 RUN unzip -u -o 'Vault-Hunters-server-files.zip'
 
 ADD ops.json .
-ADD user_jvm_args .
+ADD user_jvm_args.txt .
 
 ADD Preinitialization.sh .
 RUN chmod 777 Preinitialization.sh
