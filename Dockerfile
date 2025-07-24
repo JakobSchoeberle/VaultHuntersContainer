@@ -19,9 +19,14 @@ RUN ./Preinitialization.sh
 ADD Run.sh .
 RUN chmod 777 Run.sh
 
+RUN cd mods
+RUN curl -Lo 'canary-mc1.18.2-0.3.3.jar' 'https://mediafilez.forgecdn.net/files/5089/967/canary-mc1.18.2-0.3.3.jar'
+RUN curl -Lo 'noisium_legacy-forge-2.3.0+mc1.18.x.jar' 'https://mediafilez.forgecdn.net/files/5787/406/noisium_legacy-forge-2.3.0%2Bmc1.18.x.jar'
+RUN curl -Lo 'starlight-1.0.2+forge.546ae87.jar' 'https://mediafilez.forgecdn.net/files/3706/539/starlight-1.0.2%2Bforge.546ae87.jar'
+
 EXPOSE 25565
 EXPOSE 24454
 
 VOLUME [ "/ServerFiles" ]
 
-CMD [ "./Run.sh" ]
+CMD [ "./run.sh" ]
