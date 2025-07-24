@@ -14,6 +14,7 @@ RUN chmod 777 Preinitialization.sh
 RUN ./Preinitialization.sh
 
 ADD Run.sh .
+RUN chmod 777 Run.sh
 
 EXPOSE 25565
 EXPOSE 24454
