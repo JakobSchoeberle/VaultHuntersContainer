@@ -150,6 +150,7 @@ start_server() {
         fi
         
         args+=("@$args_file")
+        args+=("")
         args+=("nogui")
 
         # Start server
