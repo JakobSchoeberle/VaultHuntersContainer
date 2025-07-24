@@ -9,6 +9,8 @@ WORKDIR /ServerFiles
 RUN curl -Lo 'Vault-Hunters-server-files.zip' 'https://mediafilez.forgecdn.net/files/6803/163/Vault-Hunters-3rd-Edition-3.19.0.0-server-files.zip'
 RUN unzip -u -o 'Vault-Hunters-server-files.zip'
 
+ADD ops.json .
+
 ADD Preinitialization.sh .
 RUN chmod 777 Preinitialization.sh
 RUN ./Preinitialization.sh

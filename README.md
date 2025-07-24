@@ -7,7 +7,7 @@ A Containerized Vault Hunters (Third Edition) Server
     ```bash
     $ docker build . -t vaulthunters
 
-    $ docker run -v ./ServerFiles:/ServerFiles -p 25565:25565 -p 24454:24454 vaulthunters
+    $ docker run -p 25565:25565 -p 24454:24454 vaulthunters
     ```
 
     or
