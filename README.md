@@ -15,6 +15,7 @@ A Containerized Vault Hunters (Third Edition) Server
     ```bash
     $ podman build -t vaulthunters -f Dockerfile
 
-    $ podman run -p 25565:25565 -p 24454:24454 vaulthunters
+    $ podman run -v ./world:/ServerFiles/world:Z -p 25565:25565 -p 24454:24454 vaulthunters
+    
     ```
     
