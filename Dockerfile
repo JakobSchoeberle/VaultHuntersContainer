@@ -1,7 +1,10 @@
-FROM openjdk:17.0.2-jdk-buster
+#FROM openjdk:17.0.2-jdk-buster
+FROM container-registry.oracle.com/graalvm/native-image:17
 
 #RUN apt-get update
-RUN apt-get install -y unzip curl
+#RUN apt-get install -y unzip curl
+RUN microdnf install curl
+RUN microdnf install unzip
 
 #RUN mkdir -p /ServerFiles
 WORKDIR /ServerFiles
