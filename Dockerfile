@@ -25,7 +25,7 @@ RUN cd mods && curl -Lo 'starlight-1.0.2+forge.546ae87.jar' 'https://mediafilez.
 RUN cd mods && curl -Lo 'ferritecore-4.2.2-forge.jar' 'https://mediafilez.forgecdn.net/files/4074/294/ferritecore-4.2.2-forge.jar'
 RUN cd mods && curl -Lo 'lazydfu-1.0-1.18+.jar' 'https://mediafilez.forgecdn.net/files/3544/496/lazydfu-1.0-1.18%2B.jar'
 RUN cd mods && curl -Lo 'modernfix-forge-5.18.0+mc1.18.2.jar' 'https://mediafilez.forgecdn.net/files/5399/365/modernfix-forge-5.18.0%2Bmc1.18.2.jar'
-RUN cd mods && curl -Lo 'dimthread-1.18.2-v1.0.5.jar' 'https://mediafilez.forgecdn.net/files/5480/307/dimthread-1.18.2-v1.0.5.jar'
+#RUN cd mods && curl -Lo 'dimthread-1.18.2-v1.0.5.jar' 'https://mediafilez.forgecdn.net/files/5480/307/dimthread-1.18.2-v1.0.5.jar'
 RUN cd mods && curl -Lo 'Chunk-Pregenerator-1.18.2-4.4.5.jar' 'https://mediafilez.forgecdn.net/files/5632/169/Chunk-Pregenerator-1.18.2-4.4.5.jar'
 RUN cd mods && curl -Lo 'CarbonConfig-1.18.2-1.2.7.1.jar' 'https://mediafilez.forgecdn.net/files/6540/82/CarbonConfig-1.18.2-1.2.7.1.jar'
 
