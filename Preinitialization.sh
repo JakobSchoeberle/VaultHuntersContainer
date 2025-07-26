@@ -190,6 +190,8 @@ setup_server() {
         cat > "server.properties" << EOF
 allow-flight=true
 motd=Vault Hunters 3 - 1.18.2
+level-seed=-4140415073044351247
+white-list=true
 EOF
         
         if [[ "$skyvaults" =~ ^[Yy]$ ]]; then
