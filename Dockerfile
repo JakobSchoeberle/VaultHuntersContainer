@@ -10,6 +10,7 @@ RUN curl -Lo 'Vault-Hunters-server-files.zip' 'https://mediafilez.forgecdn.net/f
 RUN unzip -u -o 'Vault-Hunters-server-files.zip'
 
 ADD ops.json .
+ADD whitelist.json .
 ADD user_jvm_args.txt .
 
 ADD Preinitialization.sh .
