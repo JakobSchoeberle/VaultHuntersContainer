@@ -33,6 +33,6 @@ RUN cd mods && curl -Lo 'CarbonConfig-1.18.2-1.2.7.1.jar' 'https://mediafilez.fo
 EXPOSE 25565
 EXPOSE 24454
 
-VOLUME [ "/ServerFiles" ]
+VOLUME /ServerFiles
 
 CMD [ "./run.sh" ] 
