@@ -6,11 +6,11 @@ RUN apt-get install -y unzip curl
 #RUN mkdir -p /ServerFiles
 WORKDIR /ServerFiles
 
-RUN curl -Lo 'Vault-Hunters-server-files.zip' 'https://mediafilez.forgecdn.net/files/6807/189/Vault-Hunters-3rd-Edition-3.19.1.0-server-files.zip'
+RUN curl -Lo 'Vault-Hunters-server-files.zip' 'https://mediafilez.forgecdn.net/files/6818/946/Vault-Hunters-3rd-Edition-3.19.4.0-server-files.zip'
 RUN unzip -u -o 'Vault-Hunters-server-files.zip'
 
 ADD ops.json .
-#ADD whitelist.json .
+ADD whitelist.json .
 ADD user_jvm_args.txt .
 
 ADD Preinitialization.sh .
